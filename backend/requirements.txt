@@ -1,0 +1,6 @@
+# requirements.txt
+django>=5.0
+pytest
+pytest-django
+pytest-cov
+ruff
