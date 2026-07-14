@@ -1,0 +1,18 @@
+name: hello
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: あいさつ
+        run: echo "Hello, GitHub Actions!"
+      - name: 実行日時
+        run: echo "$(date)"
+      - name: ブランチ名
+        run: echo "${{github.ref}}"
+      - name: 実行者名
+        run: echo "${{github.actor}}"
